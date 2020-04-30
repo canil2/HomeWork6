@@ -1,0 +1,74 @@
+#weatherDashboard {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+.container-fluid .row {
+  margin: 5px;
+}
+#citySearch {
+  color: #fff;
+  background: blue;
+  padding: 11px;
+}
+#weatherContainer {
+  background-color: green;
+  color: #000;
+}
+#weatherContainer p {
+  font-size: 18px;
+}
+.leftPadding {
+  padding-left: 0px;
+}
+.card {
+  display: inline-block;
+  /* width: 18.6%; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* height: 200px; */
+  background-color: #007eff;
+  padding: 0px;
+}
+#weatherDetails #search {
+  margin-bottom: 15px;
+}
+#weatherDetails table {
+  border: 1px solid #ccc;
+}
+
+.input-group.md-form.form-sm.form-1 input {
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+  border: 1px solid #bdbdbd;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border {
+  border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border {
+  border: 1px solid #ffca28;
+}
+#weatherImg {
+  width: 50px;
+  height: 50px;
+}
+#weathericonImg {
+  width: 60px;
+  height: 60px;
+}
+.cardText {
+  font-size: 14px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1113px) {
+  .card {
+    max-width: 20%;
+  }
+}

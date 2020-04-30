@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="weatherapp.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.16.0/bootstrap-table.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="weatherapp.js"></script>
+  
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="text-center" id="weatherDashboard">
+    <h1>Weather Dashboard</h1>
+</div>
+<div class="row" id="weatherDetails">
+    <div class="col-md-12 padding-left-none"><b>Search for a city:</b></div>
+    <div class="col-md-3 padding-left-none">
+        <div class="input-group md-form form-sm form-2 pl-0" id="search">
+            <input class="form-control my-0 py-1 lime-border" id="cityName" type="text" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <span class="input-group-text lime lighten-2" id="citySearch"><i class="fa fa-search text-grey"
+                  aria-hidden="true"></i></span>
+            </div>
+          </div>
+          <table class="table table-striped">
+              <tbody>
+              </tbody>
+
+          </table>
+    </div>
+    <div class="col-md-9">
+        <div class="jumbotron" id="weatherContainer">
+            <div>
+                <h2 id="placeName" style="display:inline-block;"></h2><img id="weathericonImg" style="display:none"/>
+            </div>
+            <div>
+                <p>Temperature:&nbsp;<span id="cityTemp"></span></p>
+            </div>
+            <div>
+                <p>Humidity:&nbsp;<span id="cityHumidity"></span></p>
+            </div>
+            <div>
+                <p>Wind Speed:&nbsp;<span id="citywindSpeed"></span></p>
+            </div>
+            <div>
+                <p style="display: inline-block;">UV Index:&nbsp;<div id="uvContainerDiv" style="display: inline-block;width: 40px;height: 25px;">
+                    <span id="cityuvIndex"></span>
+                </div></p>
+            </div>
+        </div>
+        <div>
+                <p><b>5-Day Forecast:</b></p>
+                <div id="carddivContainer">
+                </div>
+                
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
